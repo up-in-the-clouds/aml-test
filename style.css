@@ -68,6 +68,12 @@ p.navigation {
   font-size: 23px;
   line-height: 1.1em;
 }
+
+li.navigation,
+p.navigation {
+  font-size: 23px;
+}
+
 span.bold {
   font-family: "Reforma 2018 Gris", sans-serif;
 }
@@ -80,10 +86,15 @@ a.anchor_point {
   text-decoration: none;
 }
 
+li.navigation:hover,
 p.navigation:hover,
 a.anchor_point:hover {
   font-family: "Reforma 2018 Gris", sans-serif;
   color: #000;
+}
+ul#menu_list {
+  padding-inline-start: 0px;
+  font-family: "Reforma 1918 blanca";
 }
 
 .active,
@@ -97,6 +108,14 @@ a.anchor_point:visited {
   color: #000;
 }
 
+li {
+  list-style: none;
+  transition: 0.4s;
+  display: block;
+  text-align: inherit;
+  line-height: 54px;
+}
+
 .grid_parent {
   display: grid;
   grid-template-columns: 25% 75%;
@@ -104,7 +123,7 @@ a.anchor_point:visited {
   grid-template-areas: "sidebar main";
   /* column-gap: 36px; */
 }
-#menu_container {
+.menu_container {
   padding: 54px 36px 54px 36px;
 }
 .l_column {
@@ -167,7 +186,7 @@ span.space_2 {
 }
 
 .container {
-  padding-left: 36px;
+  /* padding-left: 36px; */
 }
 .height_A {
   height: 30%;
@@ -178,21 +197,20 @@ span.space_2 {
   margin: 45px 36px;
 }
 
-article#home\ block,
-article#service\ block,
-article#who\ block,
-article#contact\ block {
-  position: relative;
+section#contact {
+  height: 75vh;
 }
 .block {
-  margin-top: 54px;
-  border-top: #000 solid 1px;
+  /* margin-top: 54px; */
+  /* position: relative; */
+  /* border-top: #000 solid 1px; */
 }
 .text_box {
   min-width: 400px;
   max-width: 800px;
   padding-bottom: 126px;
   padding-top: 54px;
+  padding-left: 36px;
 }
 .provitional_img {
   background-color: gray;
@@ -216,7 +234,7 @@ article#contact\ block {
 
 .r_line_home {
   border-bottom: 1px solid #000;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   display: block;
   left: -36px;
@@ -272,11 +290,11 @@ article#contact\ block {
     max-width: 230px;
   }
 
-  #menu_container,
+  .menu_container,
   .email {
     text-align: center;
   }
-  #menu_container {
+  .menu_container {
     padding-bottom: 27px;
   }
   .email {

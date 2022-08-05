@@ -14,30 +14,35 @@
   <body>
     <!-- left column-->
     <div class="grid_parent">
-      <nav class="l_column">
+      <div class="l_column">
         <div class="logo">
           <img id="logo_img" src="assets/img/A-L-M_logo_large.svg" />
           <div id="l_line"></div>
         </div>
-        <div id="menu_container">
-          <p class="navigation active">
+        <nav>
+        <div class="menu_container">
+          <ul id="menu_list">
+          <li class="home navigation active">
             <a class="anchor_point" href="#home_anchor">Periaatteemme</a>
-          </p>
-          <p class="navigation">
+          </li>
+          <li class="service navigation">
             <a class="anchor_point" href="#service_anchor">Palvelumme</a>
-          </p>
-          <p class="navigation">
+          </li>
+          <li class=" who navigation">
             <a class="anchor_point" href="#who_anchor">Keitä me olemme</a>
-          </p>
-          <p class="navigation">
+          </li>
+          <li class="contact navigation">
             <a class="anchor_point" href="#contact_anchor">Yhteystiedot</a>
-          </p>
+          </li>
+        </ul>
           <span class="space"></span>
           <p class="navigation">In English</p>
           <div class="r_line_home mobile"></div>
           <div class="email"><h3>hei@astala-lehtola-mantila.fi</h3></div>
+        
         </div>
       </nav>
+      </div>
       <!--Mobile header-->
       <div class="mobile_header">
         <img id="logo_img_mob" src="assets/img/A-L-M_logo_no-text_mobile.svg" />
@@ -47,11 +52,11 @@
         </div>
       </div>
       <!-- right column-->
-      <section class="r_column">
+      <div class="r_column">
         <div class="container">
           <div class="height_A"></div>
           <a id="home_anchor"></a>
-          <article id="home block">
+          <section id="home" class="block">
             <div class="r_line_home"></div>
 
             <div class="text_box">
@@ -94,7 +99,7 @@
             </div>
           </article>
           <a id="service_anchor"></a>
-          <article id="service block">
+          <section id="service" class="block">
             <div class="r_line_home"></div>
             <div class="text_box">
               <h1>Palvelumme</h1>
@@ -174,7 +179,7 @@
             </div>
           </article>
           <a id="who_anchor"></a>
-          <article id="who block">
+          <section id="who" class="block">
             <div class="r_line_home"></div>
             <div class="text_box">
               <h1>Keitä me olemme:</h1>
@@ -252,9 +257,9 @@
                 asti.
               </p>
             </div>
-          </article>
+          </section>
           <a id="contact_anchor"></a>
-          <article id="contact block">
+          <section id="contact" class="block">
             <div class="r_line_home"></div>
             <div class="text_box">
               <h1>Yhteystiedot:</h1>
@@ -276,12 +281,12 @@
             </div>
           </article>
         </div>
-      </section>
+      </div>
     </div>
     <script>
       //active element menu
       // Get the container element
-      var btnContainer = document.getElementById("menu_container");
+      var btnContainer = document.getElementById("menu_list");
 
       // Get all buttons with class="btn" inside the container
       var btns = btnContainer.getElementsByClassName("navigation");
@@ -297,23 +302,50 @@
 
       //scroll active
 
-      window.onscroll = () => {
-        var current = "";
+//       const sections = document.querySelectorAll('section');
+// const navLi = document.querySelectorAll('.menu_container li');
 
-        sections.forEach((article) => {
-          const sectionTop = article.offsetTop;
-          if (pageYOffset >= sectionTop) {
-            current = article.getAttribute("id");
-          }
-        });
 
-        navLi.forEach((li) => {
-          li.classList.remove("active");
-          if (li.classList.contains(current)) {
-            li.classList.add("active");
-          }
-        });
-      };
+// window.addEventListener('scroll',()=>{
+//   let current = ''
+
+//   sections.forEach(section =>{
+//     const sectionTop = section.offsetTop
+//     const sectionHeight = section.clientHeight
+
+//     if(scrollY>=(sectionTop - sectionHeight/3)){
+//       current = section.getAttribute('id')
+//     }
+//   })
+
+//   navLi.forEach(li =>{
+//     li.classList.remove('active')
+//     if(li.classList.contains(current)){
+//       li.classList.add('active')
+//     }
+//   })
+
+// })
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("nav .menu_container ul li");
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+});
+
     </script>
   </body>
   <!-- <footer>
