@@ -37,10 +37,14 @@
         </ul>
           <span class="space"></span>
           <p class="navigation">In English</p>
-          <div class="r_line_home mobile"></div>
-          <div class="email"><h3>hei@astala-lehtola-mantila.fi</h3></div>
+          
+
         
         </div>
+        <div class="r_line_home mobile"></div>
+
+        <div class="email">
+          <h3>hei@astala-lehtola-mantila.fi</h3></div>
       </nav>
       </div>
       <!--Mobile header-->
@@ -59,7 +63,7 @@
           <section id="home" class="block">
             <div class="r_line_home"></div>
 
-            <div class="text_box">
+            <div class="text_box" id="first">
               <h1 style="line-height: 9px">Astala Lehtola Mantila Oy</h1>
               <h2 style="line-height: 9px">
                 Elokuvien ja TV-sarjojen sisältöjen kehittämispalvelu:
@@ -101,7 +105,7 @@
           <a id="service_anchor"></a>
           <section id="service" class="block">
             <div class="r_line_home"></div>
-            <div class="text_box">
+            <div class="text_box" id="sec">
               <h1>Palvelumme</h1>
               <!-- Space missing-->
               <p class="paragraph">
@@ -259,7 +263,7 @@
             </div>
           </section>
           <a id="contact_anchor"></a>
-          <section id="contact" class="block">
+          <section id="contact" class="block desktop">
             <div class="r_line_home"></div>
             <div class="text_box">
               <h1>Yhteystiedot:</h1>
@@ -279,10 +283,16 @@
                 </p>
               </div>
             </div>
-          </article>
+          </section>
+          <div class="r_line_home mobile"></div>
+
+          <div class="email mobile">
+            <h3>hei@astala-lehtola-mantila.fi</h3></div>
         </div>
       </div>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
     <script>
       //active element menu
       // Get the container element
@@ -301,38 +311,13 @@
       }
 
       //scroll active
-
-//       const sections = document.querySelectorAll('section');
-// const navLi = document.querySelectorAll('.menu_container li');
-
-
-// window.addEventListener('scroll',()=>{
-//   let current = ''
-
-//   sections.forEach(section =>{
-//     const sectionTop = section.offsetTop
-//     const sectionHeight = section.clientHeight
-
-//     if(scrollY>=(sectionTop - sectionHeight/3)){
-//       current = section.getAttribute('id')
-//     }
-//   })
-
-//   navLi.forEach(li =>{
-//     li.classList.remove('active')
-//     if(li.classList.contains(current)){
-//       li.classList.add('active')
-//     }
-//   })
-
-// })
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .menu_container ul li");
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
+    const sectionHeight = section.scrollHeight;
     if (pageYOffset >= sectionTop - sectionHeight / 3) {
       current = section.getAttribute("id");
     }
@@ -345,6 +330,15 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+//hide element
+// let textB = btnContainer.getElementsByClassName("text_box");
+// const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+// window.addEventListener('scroll', ()=>{
+//  if(scrollable > 550){
+//   document.getElementById("first").style.color="#cfe6cf"
+//  }
+// })
 
     </script>
   </body>

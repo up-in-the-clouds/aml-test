@@ -138,6 +138,7 @@ li {
 .email {
   bottom: 54px;
   position: absolute;
+  margin-left: 36px;
 }
 
 .logo {
@@ -247,7 +248,21 @@ section#contact {
   justify-content: space-between;
   align-items: baseline;
 }
+
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
 @media only screen and (max-width: 991px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
   h1,
   h2 {
     font-size: 24px;
@@ -276,11 +291,11 @@ section#contact {
   .l_column,
   .r_column {
     width: auto;
-    height: auto;
   }
   .l_column {
     position: sticky;
     border-right: none;
+    height: 98vh;
   }
   .logo {
     padding-top: 36px;
@@ -306,12 +321,6 @@ section#contact {
   }
   .container {
     padding: 0;
-  }
-  article#home\ block,
-  article#service\ block,
-  article#who\ block,
-  article#contact\ block {
-    position: initial;
   }
 
   .r_line_home {
@@ -346,6 +355,7 @@ section#contact {
   .text_box {
     padding-top: 36px;
     padding-bottom: 72px;
+    padding-left: 0;
     margin: 0 18px;
   }
   span.space_2 {
