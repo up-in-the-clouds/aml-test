@@ -1,10 +1,33 @@
 @font-face {
   font-family: "Reforma 2018 Gris";
   src: url("/assets/font/Reforma2018-Gris.otf");
+
+  src: url("assets/font/Reforma2018-Gris.eot"); /* IE9 Compat Modes */
+  src: url("assets/font/Reforma2018-Gris.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("assets/font/Reforma2018-Gris.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("assets/font/Reforma2018-Gris.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("assets/font/Reforma2018-Gris.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("assets/font/Reforma2018-Gris.svg#svgFontName") format("svg"); /* Legacy iOS */
 }
+
 @font-face {
   font-family: "Reforma 1918 blanca";
-  src: url("/assets/font/Reforma1918-Blanca.otf");
+  src: url("assets/font/Reforma1918-Blanca.eot"); /* IE9 Compat Modes */
+  src: url("assets/font/Reforma1918-Blanca.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("assets/font/Reforma1918-Blanca.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("assets/font/Reforma1918-Blanca.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("assets/font/Reforma1918-Blanca.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("assets/font/Reforma1918-Blanca.svg#svgFontName") format("svg"); /* Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -50,6 +73,7 @@ span.bold {
 }
 a {
   text-decoration: underline;
+  color: #000;
 }
 
 a.anchor_point {
