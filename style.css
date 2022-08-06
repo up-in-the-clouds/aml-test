@@ -12,6 +12,8 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("assets/font/Reforma2018-Gris.svg#svgFontName") format("svg"); /* Legacy iOS */
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
@@ -41,18 +43,21 @@ h1 {
   font-family: "Reforma 2018 Gris", sans-serif;
   font-size: 30px;
   line-height: 1.1em;
+  font-weight: normal;
 }
 
 h2 {
   font-family: "Reforma 1918 blanca", sans-serif;
   font-size: 30px;
   line-height: 1.1em;
+  font-weight: normal;
 }
 
 h3 {
   font-family: "Reforma 2018 Gris", sans-serif;
   font-size: 19px;
   line-height: 1.2em;
+  font-weight: normal;
 }
 
 p {
@@ -118,48 +123,61 @@ li {
 
 .grid_parent {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 350px auto;
   grid-template-rows: auto;
   grid-template-areas: "sidebar main";
+  /* grid-template-areas: "header1 header2 sidebar main"; */
   /* column-gap: 36px; */
 }
 .menu_container {
   padding: 54px 36px 54px 36px;
+  grid-area: footer;
 }
 .l_column {
+  /* width: 25%;
+  min-width: 350px; */
   width: 25%;
-  /* min-width: 350px; */
+  min-width: 350px;
+  max-width: 25%;
   border-right: #000 solid 1px;
   height: 100vh;
   position: fixed;
   grid-area: sidebar;
-  align-items: center;
+  display: inline-grid;
+  /* grid-template-rows: 30vh auto; */
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "header"
+    "footer";
+  align-items: start;
+  z-index: 10;
 }
 .email {
   bottom: 54px;
-  position: absolute;
+  /* position: absolute; */
   margin-left: 36px;
 }
 
 .logo {
-  align-content: center;
-  margin: auto;
-  height: 30%;
+  grid-area: header;
+  margin: 0 auto;
+  height: 30vh;
   min-height: 200px;
   max-height: 350px;
-  padding-left: 36px;
-  padding-right: 36px;
-  padding-top: 45px;
-  position: relative;
 }
-#logo_img {
-  height: 30%;
+img#logo_img {
+  height: 30vh;
+  max-height: 350px;
   min-height: 200px;
-  margin: 0 auto 45px;
   display: block;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
+
 .mobile_header {
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 
 #l_line {
@@ -180,22 +198,27 @@ span.space_2 {
 }
 
 .r_column {
-  /* width: 75%; */
-  min-width: 400px;
-  /* max-width: 800px; */
   grid-area: main;
+  height: 100%;
+  display: inline-grid;
+  /* grid-template-rows: 30vh auto; */
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "header"
+    "footer";
+  align-items: start;
 }
 
 .container {
   /* padding-left: 36px; */
+  grid-area: footer;
 }
 .height_A {
-  height: 30%;
+  grid-area: header;
+  margin: 0 auto;
+  height: 30vh;
   min-height: 200px;
   max-height: 350px;
-  display: block;
-  /* border: solid 0.5px purple; */
-  margin: 45px 36px;
 }
 
 section#contact {
@@ -256,7 +279,9 @@ section#contact {
 .mobile {
   display: none;
 }
-@media only screen and (max-width: 991px) {
+
+/* mobile */
+@media only screen and (max-width: 800px) {
   .desktop {
     display: none;
   }
@@ -296,7 +321,8 @@ section#contact {
   .l_column {
     position: sticky;
     border-right: none;
-    height: 98vh;
+    height: 99vh;
+    min-width: 100%;
   }
   .logo {
     padding-top: 36px;
@@ -333,7 +359,7 @@ section#contact {
   }
 
   .mobile_header {
-    display: flex;
+    /* display: flex; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -376,5 +402,12 @@ section#contact {
   .email.mobile {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1391px) {
+  .grid_parent {
+    grid-template-columns: 25% auto;
   }
 }

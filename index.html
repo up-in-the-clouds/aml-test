@@ -14,9 +14,13 @@
   <body>
     <!-- left column-->
     <div class="grid_parent">
-      <div class="l_column">
+      <!-- <div class="logo">
+        <img id="logo_img" src="assets/img/A-L-M_logo_large.svg" />
+        <div id="l_line"></div>
+      </div> -->
+      <div class="l_column" id="menu_block">
         <div class="logo">
-          <img id="logo_img" src="assets/img/A-L-M_logo_large.svg" />
+          <a href="#home_anchor"><img id="logo_img" src="assets/img/A-L-M_logo_large-padding.svg" /></a>
           <div id="l_line"></div>
         </div>
         <nav>
@@ -48,7 +52,7 @@
       </nav>
       </div>
       <!--Mobile header-->
-      <div class="mobile_header">
+      <div class="mobile_header" id="myDiv"> 
         <img id="logo_img_mob" src="assets/img/A-L-M_logo_no-text_mobile.svg" />
         <h3 style="display: inline-flex">Astala Lehtola Mantila</h3>
         <div class="hamburguer">
@@ -56,9 +60,11 @@
         </div>
       </div>
       <!-- right column-->
+      <!-- <div class="height_A"></div> -->
       <div class="r_column">
-        <div class="container">
+        
           <div class="height_A"></div>
+          <div class="container">
           <a id="home_anchor"></a>
           <section id="home" class="block">
             <div class="r_line_home"></div>
@@ -130,9 +136,7 @@
               <p class="paragraph">
                 <span class="bold"
                   >Arvio suunnitellun hankkeen pohja-aineistosta.</span
-                >Vastaamme kysymykseen, millainen elokuva/sarja tästä
-                kannattaisi tehdä - tai kannattaisiko? Jatkotoimenpiteet ovat
-                asiakkaan harkinnan varassa.
+                >Vastaamme kysymykseen, millainen elokuva/sarja tästä kannattaisi tehdä - tai kannattaisiko? Jatkotoimenpiteet ovat asiakkaan harkinnan varassa. 
               </p>
               <p class="paragraph">
                 <span class="bold"
@@ -142,43 +146,30 @@
 
               <p class="paragraph">
                 <span class="bold"
-                  >Arvio ja kehittämissuunnitelma TV-sarjan 2 ensimmäisen osan
-                  käsikirjoituksista ja muiden osien treatmenteista /
-                  synopsiksista.
+                  >Arvio ja kehittämissuunnitelma TV-sarjan 2 ensimmäisen osan käsikirjoituksista ja muiden osien treatmenteista / synopsiksista. 
                 </span>
               </p>
 
               <p class="paragraph">
                 <span class="bold"
-                  >Arvio, dramaturginen lukuharjoitus ja kehittämissuunnitelma
-                  tv-sarjasta.</span
+                  >Arvio, dramaturginen lukuharjoitus ja kehittämissuunnitelma tv-sarjasta.</span
                 >
-                Lukuharjoitus toteutetaan yhdessä asiakkaan kanssa asiakkaan
-                valitsemin näyttelijöin.
+                Lukuharjoitus toteutetaan yhdessä asiakkaan kanssa asiakkaan valitsemin näyttelijöin.
               </p>
 
               <p class="paragraph">
-                <span class="bold">Tarina/henkilö/konsepti-työpaja</span>Asiakas
-                valitsee työpajan ensisijaisen aiheen omien tarpeittensa mukaan.
-                Työpajan voi toteuttaa käsikirjoittamisen/projektin missä
-                tahansa vaiheessa tarpeen mukaan.
+                <span class="bold">Tarina/henkilö/konsepti-työpaja.</span>Asiakas valitsee työpajan ensisijaisen aiheen omien tarpeittensa mukaan. Työpajan voi toteuttaa käsikirjoittamisen/projektin missä tahansa vaiheessa tarpeen mukaan. 
               </p>
 
               <p class="paragraph">
-                <span class="bold">Writers’ Room -työpaja</span> Myös tämä
-                työpaja muovataan asiakkaan tarpeiden ja projektin työvaiheen
-                mukaan. Tilanteesta riippuen palvelu voi olla joko rakenteita
-                luovaa (käynnistysvaihe), niitä purkavaa (ongelmanratkaisu) tai
-                molempia.
+                <span class="bold">Writers’ Room -työpaja.</span> Myös tämä työpaja muovataan asiakkaan tarpeiden ja projektin työvaiheen mukaan. Tilanteesta riippuen palvelu voi olla joko rakenteita luovaa (käynnistysvaihe), niitä purkavaa (ongelmanratkaisu) tai molempia. 
+
               </p>
 
               <p class="paragraph">
                 <span class="bold"
-                  >Konsultaatio tai mentorointi asiakkaan toivomasta
-                  aiheesta.</span
-                >Palvelun perusajatus on kirkastaa asiakkaan omia ajatuksia,
-                tukea häntä mahdollisissa pulmatilanteissa ja auttaa
-                hahmottamaan omia tavoitteitaan ja toimintatapojaan.
+                  >Konsultaatio tai mentorointi asiakkaan toivomasta aiheesta.</span
+                >Palvelun perusajatus on kirkastaa asiakkaan omia ajatuksia, tukea häntä mahdollisissa pulmatilanteissa ja auttaa hahmottamaan omia tavoitteitaan ja toimintatapojaan.
               </p>
             </div>
           </article>
@@ -291,7 +282,7 @@
         </div>
       </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
 
     <script>
       //active element menu
@@ -330,6 +321,36 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+//mobile
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+//header display mobile
+var menuContainer = document.getElementById("menu_block");
+var mobileHeader = document.getElementById("myDiv");
+const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+const menuHeight = document.documentElement.scrollHeight - menuContainer.innerHeight;
+window.addEventListener('scroll', ()=>{
+ if(scrollable > 1550){
+   console.log("HI")
+  // mobileHeader.style.display=flex
+  
+
+  menuHeight.onclick = console.log(menuHeight);
+  mobileHeader.style.visibility = "visible";
+ }
+})
+  } 
+  // else {
+  //   document.body.style.backgroundColor = "pink";
+  // }
+}
+
+var x = window.matchMedia("(max-width: 800px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+
 
 //hide element
 // let textB = btnContainer.getElementsByClassName("text_box");
