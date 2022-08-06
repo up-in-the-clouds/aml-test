@@ -322,28 +322,28 @@ window.addEventListener("scroll", () => {
 });
 
 //mobile
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-//header display mobile
-var menuContainer = document.getElementById("menu_block");
-var mobileHeader = document.getElementById("myDiv");
-const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-const menuHeight = document.documentElement.scrollHeight - menuContainer.innerHeight;
-window.addEventListener('scroll', ()=>{
- if(scrollable > 1550){
-   console.log("HI")
-  // mobileHeader.style.display=flex
+// function myFunction(x) {
+//   if (x.matches) { // If media query matches
+// //header display mobile
+// var menuContainer = document.getElementById("menu_block");
+// var mobileHeader = document.getElementById("myDiv");
+// const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+// const menuHeight = document.documentElement.scrollHeight - menuContainer.innerHeight;
+// window.addEventListener('scroll', ()=>{
+//  if(scrollable > 1550){
+//    console.log("HI")
+//   // mobileHeader.style.display=flex
   
 
-  menuHeight.onclick = console.log(menuHeight);
-  mobileHeader.style.visibility = "visible";
- }
-})
-  } 
-  // else {
-  //   document.body.style.backgroundColor = "pink";
-  // }
-}
+//   menuHeight.onclick = console.log(menuHeight);
+//   mobileHeader.style.visibility = "visible";
+//  }
+// })
+//   } 
+//   // else {
+//   //   document.body.style.backgroundColor = "pink";
+//   // }
+// }
 
 var x = window.matchMedia("(max-width: 800px)")
 myFunction(x) // Call listener function at run time
