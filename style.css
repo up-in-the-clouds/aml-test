@@ -37,6 +37,7 @@ body {
   color: #000;
   /*WHAT IS THIS line-height: 0.85 px; */
   margin: 0;
+  position: relative;
 }
 
 h1 {
@@ -161,9 +162,9 @@ img {
 }
 .email {
   bottom: 54px;
-  /* position: absolute; */
+  position: fixed;
   margin-left: 36px;
-  margin-bottom: 54px;
+  /*margin-bottom: 54px; */
 }
 
 .logo {
@@ -303,6 +304,9 @@ section#contact {
 .mobile {
   display: none;
 }
+.hide {
+  visibility: hidden;
+}
 
 /* mobile */
 @media only screen and (max-width: 800px) {
@@ -312,6 +316,9 @@ section#contact {
 
   .mobile {
     display: block;
+  }
+  .hide {
+    visibility: visible;
   }
   h1,
   h2 {
@@ -385,6 +392,8 @@ section#contact {
   }
   #myDiv {
     visibility: visible;
+    position: sticky;
+    top: 0;
   }
   .mobile_header {
     /* 

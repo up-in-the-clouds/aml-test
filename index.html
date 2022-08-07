@@ -17,12 +17,9 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
   
   </head>
   <body>
+    
     <!-- left column-->
     <div class="grid_parent">
-      <!-- <div class="logo">
-        <img id="logo_img" src="assets/img/A-L-M_logo_large.svg" />
-        <div id="l_line"></div>
-      </div> -->
       <div class="l_column" id="menu_block">
         <div class="logo">
           <a href="#home_anchor"
@@ -30,20 +27,20 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
           /></a>
           <div id="l_line"></div>
         </div>
-        <nav>
+        <nav id="navbar-example">
           <div class="menu_container">
-            <ul id="menu_list">
-              <li class="home navigation active">
-                <a class="anchor_point" href="#home_anchor">Periaatteemme</a>
+            <ul id="menu_list" class="nav">
+              <li class="home navigation nav-item">
+                <a class="anchor_point nav-link" href="#home_anchor" id="menu_1">Periaatteemme</a>
               </li>
-              <li class="service navigation">
-                <a class="anchor_point" href="#service_anchor">Palvelumme</a>
+              <li class="service navigation nav-item">
+                <a class="anchor_point nav-link" href="#service_anchor" id="menu_2">Palvelumme</a>
               </li>
-              <li class="who navigation">
-                <a class="anchor_point" href="#who_anchor">Keitä me olemme</a>
+              <li class="who navigation nav-item">
+                <a class="anchor_point nav-link" href="#who_anchor" id="menu_3">Keitä me olemme</a>
               </li>
-              <li class="contact navigation">
-                <a class="anchor_point" href="#contact_anchor">Yhteystiedot</a>
+              <li class="contact navigation nav-item">
+                <a class="anchor_point nav-link" href="#contact_anchor" id="menu_4">Yhteystiedot</a>
               </li>
             </ul>
             <span class="space"></span>
@@ -93,16 +90,16 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
           <div class="menu_container">
             <ul id="menu_list">
               <li class="home navigation active">
-                <a class="anchor_point" href="#home_anchor">Periaatteemme</a>
+                <a class="anchor_point" href="#home_anchor" id="menu_1">Periaatteemme</a>
               </li>
               <li class="service navigation nav-item">
-                <a class="anchor_point" href="#service_anchor">Palvelumme</a>
+                <a class="anchor_point" href="#service_anchor" id="menu_2">Palvelumme</a>
               </li>
               <li class="who navigation nav-item">
-                <a class="anchor_point" href="#who_anchor">Keitä me olemme</a>
+                <a class="anchor_point" href="#who_anchor" id="menu_3">Keitä me olemme</a>
               </li>
               <li class="contact navigation nav-item">
-                <a class="anchor_point" href="#contact_anchor">Yhteystiedot</a>
+                <a class="anchor_point" href="#contact_anchor" id="menu_4">Yhteystiedot</a>
               </li>
             </ul>
             <span class="space"></span>
@@ -130,7 +127,7 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
           <a id="home_anchor"></a>
           <section id="home" class="block">
             <div class="r_line_home"></div>
-
+      
             <div class="text_box" id="first">
               <h1 style="line-height: 9px">Astala Lehtola Mantila Oy</h1>
               <h2 style="line-height: 9px">
@@ -175,7 +172,7 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
           <a id="service_anchor"></a>
           <section id="service" class="block">
             <div class="r_line_home"></div>
-            <div class="text_box" id="sec">
+            <div class="text_box" id="second">
               <h1>Palvelumme</h1>
               <!-- Space missing-->
               <p class="paragraph">
@@ -255,12 +252,12 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
             </div>
           </section>
           <a id="who_anchor"></a>
-          <section id="who" class="block">
+          <section id="who" class="block" style="height: 100%;">
             <div class="r_line_home"></div>
-            <div class="text_box">
+            <div class="text_box" id="third">
               <h1>Keitä me olemme:</h1>
               <h3>Erkki Astala</h3>
-              <div class="vertical_img_2">
+              <div class="vertical_img">
                 <img src="/assets/img/erkki.jpg" />
               </div>
               <p class="paragraph">
@@ -287,7 +284,7 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
               </p>
               <span class="space_2"></span>
               <h3>Juha Lehtola</h3>
-              <div class="vertical_img_2">
+              <div class="vertical_img">
                 <img src="/assets/img/juha.jpg" />
               </div>
               <p class="paragraph">
@@ -314,7 +311,7 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
               </p>
               <span class="space_2"></span>
               <h3>Auli Mantila</h3>
-              <div class="vertical_img_2">
+              <div class="vertical_img">
                 <img src="/assets/img/auli.jpg" />
               </div>
               <p class="paragraph">
@@ -374,6 +371,7 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
         </div>
       </div>
     </div>
+    <!-- bootstrap -->
     <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -389,6 +387,10 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
+  <!-- Scroll -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="/scroll.js"></script>
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
     <!-- <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -400,6 +402,8 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
       integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
       crossorigin="anonymous"
     ></script> -->
+   
+
     <script>
       //active element menu
       // Get the container element
@@ -417,26 +421,38 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
         });
       }
 
+      //scrollspy
+//       $('body').scrollspy({ target: '#navbar-example' })
+//       $('[data-spy="scroll"]').each(function () {
+//   var $spy = $(this).scrollspy('refresh')
+// })
       //scroll active
-      const sections = document.querySelectorAll("section");
-      const navLi = document.querySelectorAll("nav .menu_container ul li");
-      window.addEventListener("scroll", () => {
-        let current = "";
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.scrollHeight;
-          if (pageYOffset >= sectionTop - sectionHeight / 5) {
-            current = section.getAttribute("id");
-          }
-        });
+  
+// function myFunction() {
+//   window.scrollBy(100, 100);
+//   alert("pageXOffset: " + window.pageXOffset + ", pageYOffset: " + window.pageYOffset);
+// }
 
-        navLi.forEach((li) => {
-          li.classList.remove("active");
-          if (li.classList.contains(current)) {
-            li.classList.add("active");
-          }
-        });
-      });
+
+//       const sections = document.querySelectorAll("section");
+//       const navLi = document.querySelectorAll("nav .menu_container ul li");
+//       window.addEventListener("scroll", () => {
+//         let current = "";
+//         sections.forEach((section) => {
+//           const sectionTop = section.offsetTop;
+//           const sectionHeight = section.scrollHeight;
+//           if (pageYOffset >= sectionTop - sectionHeight / 5) {
+//             current = section.getAttribute("id");
+//           }
+//         });
+
+//         navLi.forEach((li) => {
+//           li.classList.remove("active");
+//           if (li.classList.contains(current)) {
+//             li.classList.add("active");
+//           }
+//         });
+//       });
 
       //mobile
       // function myFunction(x) {
