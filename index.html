@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astala Lehtola Mantila Oy</title>
+
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,500,0,0"
-    />
+
+    <link rel="stylesheet" href="navbar.css" />
+
+<link
+rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,500,0,0"
+/>
+  
   </head>
   <body>
     <!-- left column-->
@@ -57,14 +62,67 @@
           </div>
         </nav>
       </div>
+
       <!--Mobile header-->
-      <div class="mobile_header" id="myDiv">
-        <img id="logo_img_mob" src="assets/img/A-L-M_logo_no-text_mobile.svg" />
-        <h3 style="display: inline-flex">Astala Lehtola Mantila</h3>
-        <div class="hamburguer">
-          <span class="material-symbols-sharp"> menu </span>
+      <nav class="navbar navbar-dark fixed-top" id="myDiv">
+        <div class="container">
+          <div class="mobile_header">
+        <div class="header_name">
+          <img
+            id="logo_img_mob"
+            src="assets/img/A-L-M_logo_no-text_mobile.svg"
+          />
+          <h3 style="display: inline-flex">Astala Lehtola Mantila</h3>
         </div>
       </div>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="logo">
+          <a href="#home_anchor"
+            ><img id="logo_img" src="assets/img/A-L-M_logo_large-padding.svg"
+          /></a>
+          <div id="l_line"></div>
+        </div>
+        <div>
+          <div class="menu_container">
+            <ul id="menu_list">
+              <li class="home navigation active">
+                <a class="anchor_point" href="#home_anchor">Periaatteemme</a>
+              </li>
+              <li class="service navigation nav-item">
+                <a class="anchor_point" href="#service_anchor">Palvelumme</a>
+              </li>
+              <li class="who navigation nav-item">
+                <a class="anchor_point" href="#who_anchor">Keitä me olemme</a>
+              </li>
+              <li class="contact navigation nav-item">
+                <a class="anchor_point" href="#contact_anchor">Yhteystiedot</a>
+              </li>
+            </ul>
+            <span class="space"></span>
+            <p class="navigation">
+              <a class="anchor_point" href="/index_en.html">In English</a>
+            </p>
+          </div>
+          <div class="r_line_home mobile"></div>
+
+          <div class="email">
+            <h3>
+              <a class="email_link" href="mailto:hei@astala-lehtola-mantila.fi"
+                >hei@astala-lehtola-mantila.fi</a
+              >
+            </h3>
+          </div>
+        </div>
+      </div>
+        </nav>
+     
       <!-- right column-->
       <div class="r_column">
         <div class="height_A"></div>
@@ -78,7 +136,9 @@
               <h2 style="line-height: 9px">
                 Elokuvien ja TV-sarjojen sisältöjen kehittämispalvelu:
               </h2>
-              <div class="provitional_img"></div>
+              <div class="full_img">
+                <img src="/assets/img/all.jpg" />
+              </div>
               <h3>Sano mitä sanot, me autamme</h3>
               <p class="paragraph">
                 Uskomme siihen, mikä sisällössä on tekijöille arvokkainta,
@@ -200,7 +260,9 @@
             <div class="text_box">
               <h1>Keitä me olemme:</h1>
               <h3>Erkki Astala</h3>
-              <div class="provitional_img_2"></div>
+              <div class="vertical_img_2">
+                <img src="/assets/img/erkki.jpg" />
+              </div>
               <p class="paragraph">
                 Olen ollut arvioimassa ja sparraamassa satojen elokuvien ja
                 monien tv-sarjojen käsikirjoituksia ja leikkausversioita,
@@ -225,7 +287,9 @@
               </p>
               <span class="space_2"></span>
               <h3>Juha Lehtola</h3>
-              <div class="provitional_img_2"></div>
+              <div class="vertical_img_2">
+                <img src="/assets/img/juha.jpg" />
+              </div>
               <p class="paragraph">
                 Olen käsikirjoittaja-ohjaaja ja opettanut dramaturgiaa sekä
                 Teatterikorkeakoulussa että Aalto Yliopistossa. Olen ollut
@@ -250,7 +314,9 @@
               </p>
               <span class="space_2"></span>
               <h3>Auli Mantila</h3>
-              <div class="provitional_img_2"></div>
+              <div class="vertical_img_2">
+                <img src="/assets/img/auli.jpg" />
+              </div>
               <p class="paragraph">
                 Olen valmistunut elokuvakäsikirjoittajaksi ja -ohjaajaksi vuonna
                 1997 ja siitä lähtien tehnyt koulutustani vastaavaa työtä. Olen
@@ -308,8 +374,32 @@
         </div>
       </div>
     </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+  ></script>
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
-
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script> -->
     <script>
       //active element menu
       // Get the container element
@@ -335,7 +425,7 @@
         sections.forEach((section) => {
           const sectionTop = section.offsetTop;
           const sectionHeight = section.scrollHeight;
-          if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          if (pageYOffset >= sectionTop - sectionHeight / 5) {
             current = section.getAttribute("id");
           }
         });
@@ -371,9 +461,9 @@
       //   // }
       // }
 
-      var x = window.matchMedia("(max-width: 800px)");
-      myFunction(x); // Call listener function at run time
-      x.addListener(myFunction); // Attach listener function on state changes
+      // var x = window.matchMedia("(max-width: 800px)");
+      // myFunction(x); // Call listener function at run time
+      // x.addListener(myFunction); // Attach listener function on state changes
 
       //hide element
       // let textB = btnContainer.getElementsByClassName("text_box");
@@ -383,6 +473,8 @@
       //   document.getElementById("first").style.color="#cfe6cf"
       //  }
       // })
+
+      //mobile menu collapse
     </script>
   </body>
   <!-- <footer>
