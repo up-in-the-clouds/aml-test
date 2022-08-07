@@ -59,7 +59,9 @@ h3 {
   line-height: 1.2em;
   font-weight: normal;
 }
-
+h3.email_address {
+  line-height: 0;
+}
 p {
   font-family: "Reforma 1918 blanca", sans-serif;
 }
@@ -90,7 +92,9 @@ a {
 a.anchor_point {
   text-decoration: none;
 }
-
+a.email_link {
+  text-decoration: none;
+}
 li.navigation:hover,
 p.navigation:hover,
 a.anchor_point:hover {
@@ -134,8 +138,6 @@ li {
   grid-area: footer;
 }
 .l_column {
-  /* width: 25%;
-  min-width: 350px; */
   width: 25%;
   min-width: 350px;
   max-width: 25%;
@@ -144,7 +146,7 @@ li {
   position: fixed;
   grid-area: sidebar;
   display: inline-grid;
-  /* grid-template-rows: 30vh auto; */
+  grid-template-rows: 30vh auto;
   grid-template-columns: 100%;
   grid-template-areas:
     "header"
@@ -156,6 +158,7 @@ li {
   bottom: 54px;
   /* position: absolute; */
   margin-left: 36px;
+  margin-bottom: 54px;
 }
 
 .logo {
@@ -222,7 +225,7 @@ span.space_2 {
 }
 
 section#contact {
-  height: 75vh;
+  height: 70vh;
 }
 .block {
   /* margin-top: 54px; */
@@ -236,6 +239,9 @@ section#contact {
   padding-top: 54px;
   padding-left: 36px;
   padding-right: 36px;
+}
+.text_box.eng_text {
+  padding-bottom: 54px;
 }
 .provitional_img {
   background-color: gray;
@@ -256,7 +262,13 @@ section#contact {
   flex-wrap: wrap;
   float: right;
 }
-
+.provitional_img_2.eng {
+  margin-right: 36px;
+  margin-bottom: 0;
+}
+#margin_left {
+  margin-left: 0;
+}
 .r_line_home {
   border-bottom: 1px solid #000;
   /* position: absolute; */
@@ -273,6 +285,10 @@ section#contact {
   align-items: baseline;
 }
 
+.columns.eng_img {
+  justify-content: start;
+  display: flex;
+}
 .desktop {
   display: block;
 }
@@ -321,8 +337,9 @@ section#contact {
   .l_column {
     position: sticky;
     border-right: none;
-    height: 99vh;
+    height: 100%;
     min-width: 100%;
+    display: block;
   }
   .logo {
     padding-top: 36px;
@@ -330,6 +347,7 @@ section#contact {
   #logo_img {
     margin-bottom: 36px;
     max-width: 230px;
+    margin: auto;
   }
 
   .menu_container,
@@ -391,7 +409,10 @@ section#contact {
   .provitional_img_2 {
     margin-top: -30px;
   }
-
+  .provitional_img_2.eng {
+    margin-top: 0;
+    width: 100%;
+  }
   article#contact\ block {
     height: 100vh;
   }
@@ -410,4 +431,20 @@ section#contact {
   .grid_parent {
     grid-template-columns: 25% auto;
   }
+  /* .l_column {
+    grid-template-rows: 350px auto;
+  } */
 }
+
+/* desktop */
+@media only screen and (min-width: 1350px) {
+  /* .l_column {
+    grid-template-rows: 350px auto;
+  } */
+}
+/* 
+@media only screen and (max-height: 100) {
+  .l_column {
+    grid-template-rows: auto;
+  }
+} */
