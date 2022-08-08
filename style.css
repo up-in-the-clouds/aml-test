@@ -62,6 +62,7 @@ h3 {
 }
 h3.email_address {
   line-height: 0;
+  font-size: 15px;
 }
 p {
   font-family: "Reforma 1918 blanca", sans-serif;
@@ -73,13 +74,13 @@ p.paragraph {
 }
 
 p.navigation {
-  font-size: 23px;
+  font-size: 19px;
   line-height: 1.1em;
 }
 
 li.navigation,
 p.navigation {
-  font-size: 23px;
+  font-size: 19px;
 }
 
 span.bold {
@@ -140,7 +141,7 @@ img {
   /* column-gap: 36px; */
 }
 .menu_container {
-  padding: 54px 36px 54px 36px;
+  padding: 36px 36px 54px 36px;
   grid-area: footer;
 }
 .l_column {
@@ -162,7 +163,7 @@ img {
 }
 .email {
   bottom: 54px;
-  position: fixed;
+  /* position: fixed; */
   margin-left: 36px;
   /*margin-bottom: 54px; */
 }
@@ -258,6 +259,7 @@ section#contact {
   padding-top: 23.5%; */
   margin-top: 36px;
   margin-bottom: 45px;
+  width: 75%;
 }
 
 .vertical_img {
@@ -297,6 +299,7 @@ section#contact {
 .columns.eng_img {
   justify-content: start;
   display: flex;
+  margin-top: 72px;
 }
 .desktop {
   display: block;
@@ -307,7 +310,15 @@ section#contact {
 .hide {
   visibility: hidden;
 }
-
+.margin_top {
+  margin-top: 0;
+}
+.margin_top_9 {
+  margin-top: 9px;
+}
+.margin_bottom {
+  margin-bottom: 0;
+}
 /* mobile */
 @media only screen and (max-width: 800px) {
   .desktop {
@@ -328,11 +339,11 @@ section#contact {
   h3 {
     font-size: 15.2px;
   }
-  p .paragraph {
+  p.paragraph {
     font-size: 15.2px;
   }
 
-  p .navigation {
+  p.navigation {
     font-size: 18.4px;
   }
 
@@ -356,9 +367,9 @@ section#contact {
     min-width: 100%;
     display: block;
   }
-  .logo {
+  /* .logo {
     padding-top: 36px;
-  }
+  } */
   #logo_img {
     margin-bottom: 36px;
     max-width: 230px;
@@ -375,6 +386,7 @@ section#contact {
   .email {
     position: inherit;
     padding-top: 27px;
+    margin-left: 0;
   }
   .height_A {
     display: none;
@@ -421,11 +433,14 @@ section#contact {
     display: inline-flex;
     padding: 18px;
   }
-
+  .margin_top_9 {
+    margin-top: 6.5px;
+  }
   .text_box {
     padding-top: 36px;
     padding-bottom: 72px;
     padding-left: 0;
+    padding-right: 0px;
     margin: 0 18px;
   }
   span.space_2 {
@@ -445,6 +460,15 @@ section#contact {
   .email.mobile {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .full_img {
+    width: 100%;
+    margin-top: 27px;
+    margin-bottom: 36px;
+  }
+
+  section#contact {
+    min-height: 72px;
   }
 }
 
