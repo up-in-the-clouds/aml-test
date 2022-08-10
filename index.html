@@ -10,14 +10,12 @@
 
     <link rel="stylesheet" href="navbar.css" />
 
-<link
-rel="stylesheet"
-href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,500,0,0"
-/>
-  
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,500,0,0"
+    />
   </head>
   <body>
-    
     <!-- left column-->
     <div class="grid_parent">
       <div class="l_column" id="menu_block">
@@ -31,21 +29,38 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
           <div class="menu_container">
             <ul id="menu_list" class="nav margin_top">
               <li class="home navigation nav-item margin_top margin_bottom">
-                <a class="anchor_point nav-link" href="#home_anchor" id="menu_1">Periaatteemme</a>
+                <a class="anchor_point nav-link" href="#home_anchor" id="menu_1"
+                  >Periaatteemme</a
+                >
               </li>
               <li class="service navigation nav-item">
-                <a class="anchor_point nav-link" href="#service_anchor" id="menu_2">Palvelumme</a>
+                <a
+                  class="anchor_point nav-link"
+                  href="#service_anchor"
+                  id="menu_2"
+                  >Palvelumme</a
+                >
               </li>
               <li class="who navigation nav-item">
-                <a class="anchor_point nav-link" href="#who_anchor" id="menu_3">Keitä me olemme</a>
+                <a class="anchor_point nav-link" href="#who_anchor" id="menu_3"
+                  >Keitä me olemme</a
+                >
               </li>
               <li class="contact navigation nav-item">
-                <a class="anchor_point nav-link" href="#contact_anchor" id="menu_4">Yhteystiedot</a>
+                <a
+                  class="anchor_point nav-link"
+                  href="#contact_anchor"
+                  id="menu_4"
+                  >Yhteystiedot</a
+                >
               </li>
             </ul>
+            <div id="mobile_header_trigger"></div>
             <span class="space_2"></span>
             <p class="navigation margin_top">
-              <a class="anchor_point" href="index_en.html#home_anchor">In English</a>
+              <a class="anchor_point" href="index_en.html#home_anchor"
+                >In English</a
+              >
             </p>
           </div>
           <div class="r_line_home mobile"></div>
@@ -55,89 +70,113 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
               <a class="email_link" href="mailto:hei@astala-lehtola-mantila.fi"
                 >hei@astala-lehtola-mantila.fi</a
               >
-              <span class="space_2"></span>
             </h3>
+            <span class="space_2"></span>
           </div>
         </nav>
       </div>
 
       <!--Mobile header-->
-      <nav class="navbar navbar-dark fixed-top" id="myDiv">
-        <div class="container">
-          <div class="mobile_header">
-        <div class="header_name">
-          <img
-            id="logo_img_mob"
-            src="assets/img/A-L-M_logo_no-text_mobile.svg"
-          />
-          <h3 style="display: inline-flex">Astala Lehtola Mantila</h3>
-        </div>
-      </div>
-  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="logo">
-          <a href="#home_anchor"
-            ><img id="logo_img" src="assets/img/A-L-M_logo_large-padding.svg"
-          /></a>
-          <div id="l_line"></div>
-        </div>
-        <div>
-          <div class="menu_container">
-            <ul id="menu_list">
-              <li class="home navigation active">
-                <a class="anchor_point" href="#home_anchor" id="menu_1">Periaatteemme</a>
-              </li>
-              <li class="service navigation nav-item">
-                <a class="anchor_point" href="#service_anchor" id="menu_2">Palvelumme</a>
-              </li>
-              <li class="who navigation nav-item">
-                <a class="anchor_point" href="#who_anchor" id="menu_3">Keitä me olemme</a>
-              </li>
-              <li class="contact navigation nav-item">
-                <a class="anchor_point" href="#contact_anchor" id="menu_4">Yhteystiedot</a>
-              </li>
-            </ul>
-            <span class="space"></span>
-            <p class="navigation">
-              <a class="anchor_point" href="index_en.html#home_anchor">In English</a>
-            </p>
+      <nav class="navbar navbar-dark fixed-top">
+        <!-- id="myDiv" -->
+        <!-- <div class="container"> -->
+        <div class="mobile_header">
+          <div class="header_name">
+            <img
+              id="logo_img_mob"
+              src="assets/img/A-L-M_logo_no-text_mobile.svg"
+            />
+            <h3 style="display: inline-flex">Astala Lehtola Mantila</h3>
           </div>
-          <div class="r_line_home mobile"></div>
 
-          <div class="email">
-            <h3 class="email_address">
-              <a class="email_link" href="mailto:hei@astala-lehtola-mantila.fi"
-                >hei@astala-lehtola-mantila.fi</a
-              >
-            </h3>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="logo">
+            <a href="#home_anchor"
+              ><img id="logo_img" src="assets/img/A-L-M_logo_large-padding.svg"
+            /></a>
+            <div id="l_line"></div>
+          </div>
+          <div>
+            <div class="menu_container">
+              <ul id="menu_list">
+                <li class="home navigation nav-item">
+                  <a class="anchor_point" href="#home_anchor" id="menu_1"
+                    >Periaatteemme</a
+                  >
+                </li>
+                <li class="service navigation nav-item">
+                  <a class="anchor_point" href="#service_anchor" id="menu_2"
+                    >Palvelumme</a
+                  >
+                </li>
+                <li class="who navigation nav-item">
+                  <a class="anchor_point" href="#who_anchor" id="menu_3"
+                    >Keitä me olemme</a
+                  >
+                </li>
+                <li class="contact navigation nav-item">
+                  <a class="anchor_point" href="#contact_anchor" id="menu_4"
+                    >Yhteystiedot</a
+                  >
+                </li>
+              </ul>
+              <span class="space"></span>
+              <p class="navigation">
+                <a class="anchor_point" href="index_en.html#home_anchor"
+                  >In English</a
+                >
+              </p>
+            </div>
+            <div class="r_line_home mobile"></div>
+
+            <div class="email">
+              <h3 class="email_address">
+                <a
+                  class="email_link"
+                  href="mailto:hei@astala-lehtola-mantila.fi"
+                  >hei@astala-lehtola-mantila.fi</a
+                >
+              </h3>
+            </div>
           </div>
         </div>
-      </div>
-        </nav>
-     
+      </nav>
+
       <!-- right column-->
       <div class="r_column">
         <div class="height_A"></div>
         <div class="container">
-          <a id="home_anchor"></a>
+          <a id="home_anchor" class="anchor_height"></a>
           <section id="home" class="block">
             <div class="r_line_home"></div>
-      
+
             <div class="text_box" id="first">
-              <h1 class="margin_top margin_bottom">Astala Lehtola Mantila Oy</h1>
+              <h1 class="margin_top margin_bottom">
+                Astala Lehtola Mantila Oy
+              </h1>
               <h2 class="margin_top_9 margin_bottom">
                 Elokuvien ja TV-sarjojen sisältöjen kehittämispalvelu
               </h2>
               <div class="full_img">
                 <img src="assets/img/all.jpg" />
               </div>
-              <h3 class="margin_top margin_bottom">Sano mitä sanot, me autamme</h3>
+              <h3 class="margin_top margin_bottom">
+                Sano mitä sanot, me autamme
+              </h3>
               <p class="paragraph">
                 Uskomme siihen, mikä sisällössä on tekijöille arvokkainta,
                 innostavinta ja ominta. Teemme työtä yhdessä käsikirjoittajan,
@@ -170,7 +209,7 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
               </p>
             </div>
           </section>
-          <a id="service_anchor"></a>
+          <a id="service_anchor" class="anchor_height"></a>
           <section id="service" class="block">
             <div class="r_line_home"></div>
             <div class="text_box" id="second">
@@ -252,8 +291,8 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
               </p>
             </div>
           </section>
-          <a id="who_anchor"></a>
-          <section id="who" class="block" style="height: 100%;">
+          <a id="who_anchor" class="anchor_height"></a>
+          <section id="who" class="block" style="height: 100%">
             <div class="r_line_home"></div>
             <div class="text_box" id="third">
               <h1 class="margin_top margin_bottom">Keitä me olemme:</h1>
@@ -339,13 +378,15 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
               </p>
             </div>
           </section>
-          <a id="contact_anchor"></a>
+          <a id="contact_anchor" class="anchor_height"></a>
           <section id="contact" class="block">
             <div class="r_line_home"></div>
             <div class="text_box">
               <h1 class="margin_top margin_bottom">Yhteystiedot:</h1>
               <span class="space_2"></span>
-              <p class="paragraph margin_top margin_bottom">hei@astala-lehtola-mantila.fi</p>
+              <p class="paragraph margin_top margin_bottom">
+                hei@astala-lehtola-mantila.fi
+              </p>
               <div class="columns">
                 <p class="paragraph">
                   <span class="bold">Erkki Astala</span><br />
@@ -376,37 +417,25 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
     </div>
     <!-- bootstrap -->
     <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-  ></script>
-  <!-- Scroll -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  <script src="scroll.js"></script>
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
-    ></script> -->
-   
-
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Scroll -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="scroll.js"></script>
+    <script src="script.js"></script>
     <script>
       //active element menu
       // Get the container element
@@ -423,80 +452,6 @@ href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,
           this.className += " active";
         });
       }
-
-      //scrollspy
-//       $('body').scrollspy({ target: '#navbar-example' })
-//       $('[data-spy="scroll"]').each(function () {
-//   var $spy = $(this).scrollspy('refresh')
-// })
-      //scroll active
-  
-// function myFunction() {
-//   window.scrollBy(100, 100);
-//   alert("pageXOffset: " + window.pageXOffset + ", pageYOffset: " + window.pageYOffset);
-// }
-
-
-//       const sections = document.querySelectorAll("section");
-//       const navLi = document.querySelectorAll("nav .menu_container ul li");
-//       window.addEventListener("scroll", () => {
-//         let current = "";
-//         sections.forEach((section) => {
-//           const sectionTop = section.offsetTop;
-//           const sectionHeight = section.scrollHeight;
-//           if (pageYOffset >= sectionTop - sectionHeight / 5) {
-//             current = section.getAttribute("id");
-//           }
-//         });
-
-//         navLi.forEach((li) => {
-//           li.classList.remove("active");
-//           if (li.classList.contains(current)) {
-//             li.classList.add("active");
-//           }
-//         });
-//       });
-
-      //mobile
-      // function myFunction(x) {
-      //   if (x.matches) { // If media query matches
-      // //header display mobile
-      // var menuContainer = document.getElementById("menu_block");
-      // var mobileHeader = document.getElementById("myDiv");
-      // const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-      // const menuHeight = document.documentElement.scrollHeight - menuContainer.innerHeight;
-      // window.addEventListener('scroll', ()=>{
-      //  if(scrollable > 1550){
-      //    console.log("HI")
-      //   // mobileHeader.style.display=flex
-
-      //   menuHeight.onclick = console.log(menuHeight);
-      //   mobileHeader.style.visibility = "visible";
-      //  }
-      // })
-      //   }
-      //   // else {
-      //   //   document.body.style.backgroundColor = "pink";
-      //   // }
-      // }
-
-      // var x = window.matchMedia("(max-width: 800px)");
-      // myFunction(x); // Call listener function at run time
-      // x.addListener(myFunction); // Attach listener function on state changes
-
-      //hide element
-      // let textB = btnContainer.getElementsByClassName("text_box");
-      // const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-      // window.addEventListener('scroll', ()=>{
-      //  if(scrollable > 550){
-      //   document.getElementById("first").style.color="#cfe6cf"
-      //  }
-      // })
-
-      //mobile menu collapse
     </script>
   </body>
-  <!-- <footer>
-    <link href="script.js" />
-  </footer> -->
 </html>

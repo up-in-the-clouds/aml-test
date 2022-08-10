@@ -17,36 +17,45 @@
     <div class="grid_parent">
       <div class="l_column" id="menu_block">
         <div class="logo">
-          <a href="/index.html"
+          <a href="index.html#home_anchor"
             ><img id="logo_img" src="assets/img/A-L-M_logo_large-padding.svg"
           /></a>
           <div id="l_line"></div>
         </div>
-        <nav>
+        <nav id="navbar-example">
           <div class="menu_container">
-            <ul id="menu_list" class="margin_top">
-              <li class="home navigation">
-                <a class="anchor_point" href="/index.html">Etusivu</a>
+            <ul id="menu_list" class="nav margin_top">
+              <li class="home navigation nav-item margin_top margin_bottom">
+                <a class="anchor_point nav-link" href="index.html#home_anchor"
+                  >Etusivu</a
+                >
               </li>
-              <li class="service navigation">
-                <a class="anchor_point" href="/index.html#service_anchor"
+              <li class="service navigation nav-item">
+                <a
+                  class="anchor_point nav-link"
+                  href="index.html#service_anchor"
                   >Palvelumme</a
                 >
               </li>
-              <li class="who navigation">
-                <a class="anchor_point" href="/index.html#who_anchor"
+              <li class="who navigation nav-item">
+                <a class="anchor_point nav-link" href="index.html#who_anchor"
                   >Keitä me olemme</a
                 >
               </li>
-              <li class="contact navigation">
-                <a class="anchor_point" href="/index.html#contact_anchor"
+              <li class="contact navigation nav-item">
+                <a
+                  class="anchor_point nav-link"
+                  href="index.html#contact_anchor"
                   >Yhteystiedot</a
                 >
               </li>
             </ul>
+            <div id="mobile_header_trigger"></div>
             <span class="space"></span>
             <p class="navigation active margin_top">
-              <a class="anchor_point" href="index_en.html#home_anchor">In English</a>
+              <a class="anchor_point nav-link" href="index_en.html#home_anchor"
+                >In English</a
+              >
             </p>
           </div>
           <div class="r_line_home mobile"></div>
@@ -60,79 +69,98 @@
           </div>
         </nav>
       </div>
-  
-    <!--Mobile header-->
-    <nav class="navbar navbar-dark fixed-top" id="myDiv">
-        <div class="container">
-          <div class="mobile_header">
-        <div class="header_name">
-          <img
-            id="logo_img_mob"
-            src="assets/img/A-L-M_logo_no-text_mobile.svg"
-          />
-          <h3 style="display: inline-flex">Astala Lehtola Mantila</h3>
-        </div>
-      </div>
-  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="logo">
-          <a href="index.html"
-            ><img id="logo_img" src="assets/img/A-L-M_logo_large-padding.svg"
-          /></a>
-          <div id="l_line"></div>
-        </div>
-        <div>
-          <div class="menu_container">
-            <ul id="menu_list" class="margin_top">
-              <li class="home navigation nav-item">
-                <a class="anchor_point" href="index.html">Periaatteemme</a>
-              </li>
-              <li class="service navigation nav-item">
-                <a class="anchor_point" href="index.html#service_anchor">Palvelumme</a>
-              </li>
-              <li class="who navigation nav-item">
-                <a class="anchor_point" href="index.html#who_anchor">Keitä me olemme</a>
-              </li>
-              <li class="contact navigation nav-item">
-                <a class="anchor_point" href="index.html#contact_anchor">Yhteystiedot</a>
-              </li>
-            </ul>
-            <span class="space_2"></span>
-            <p class="navigation nav-item active margin_top">
-              <a class="anchor_point" href="index_en.html#home_anchor">In English</a>
-            </p>
-          </div>
-          <div class="r_line_home mobile"></div>
 
-          <div class="email">
-            <h3>
-              <a class="email_link" href="mailto:hei@astala-lehtola-mantila.fi"
-                >hei@astala-lehtola-mantila.fi</a
-              >
-            </h3>
+      <!--Mobile header-->
+      <nav class="navbar navbar-dark fixed-top">
+        <div class="mobile_header">
+          <div class="header_name">
+            <img
+              id="logo_img_mob"
+              src="assets/img/A-L-M_logo_no-text_mobile.svg"
+            />
+            <h3 style="display: inline-flex">Astala Lehtola Mantila</h3>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="logo">
+            <a href="index.html#home_anchor"
+              ><img id="logo_img" src="assets/img/A-L-M_logo_large-padding.svg"
+            /></a>
+            <div id="l_line"></div>
+          </div>
+          <div>
+            <div class="menu_container">
+              <ul id="menu_list" class="margin_top">
+                <li class="home navigation nav-item">
+                  <a class="anchor_point" href="index.html#home_anchor"
+                    >Periaatteemme</a
+                  >
+                </li>
+                <li class="service navigation nav-item">
+                  <a class="anchor_point" href="index.html#service_anchor"
+                    >Palvelumme</a
+                  >
+                </li>
+                <li class="who navigation nav-item">
+                  <a class="anchor_point" href="index.html#who_anchor"
+                    >Keitä me olemme</a
+                  >
+                </li>
+                <li class="contact navigation nav-item">
+                  <a class="anchor_point" href="index.html#contact_anchor"
+                    >Yhteystiedot</a
+                  >
+                </li>
+              </ul>
+
+              <span class="space_2"></span>
+              <p class="navigation nav-item active margin_top">
+                <a class="anchor_point" href="index_en.html#home_anchor"
+                  >In English</a
+                >
+              </p>
+            </div>
+            <div class="r_line_home mobile"></div>
+
+            <div class="email">
+              <h3>
+                <a
+                  class="email_link"
+                  href="mailto:hei@astala-lehtola-mantila.fi"
+                  >hei@astala-lehtola-mantila.fi</a
+                >
+              </h3>
+            </div>
           </div>
         </div>
-      </div>
-        </nav>
+      </nav>
 
       <!-- right column-->
       <div class="r_column">
         <div class="height_A"></div>
         <div class="container">
-          <a id="home_anchor"></a>
+          <a id="home_anchor" class="anchor_height"></a>
           <section id="home_eng" class="block">
-
             <div class="r_line_home"></div>
 
             <div class="text_box eng_text">
-
-              <h1  class="margin_top margin_bottom">Astala Lehtola Mantila Oy</h1>
+              <h1 class="margin_top margin_bottom">
+                Astala Lehtola Mantila Oy
+              </h1>
               <h2 class="margin_bottom margin_top_9">
                 Film and TV Series Content Development Service
               </h2>
@@ -243,21 +271,27 @@
         </div>
       </div>
     </div>
+    <!-- bootstrap -->
     <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-  ></script>
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Scroll -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="scroll.js"></script>
+    <script src="script.js"></script>
     <script>
       //active element menu
       // Get the container element
