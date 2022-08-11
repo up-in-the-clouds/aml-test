@@ -36,11 +36,11 @@ new ScrollMagic.Scene({ triggerElement: "#contact", duration:$("#contact").heigh
   .addTo(controller);
 
 //hide text
-  new ScrollMagic.Scene({ triggerElement: "#service", duration: $("#service").height() , triggerHook: 0.3 })
+  new ScrollMagic.Scene({ triggerElement: "#service", duration: $("#service").height() , triggerHook: 0.31 })
   .setClassToggle("#first", "hide") // add class toggle
  // .addIndicators() // add indicators (requires plugin)
   .addTo(controller);
-new ScrollMagic.Scene({ triggerElement: "#who",  duration:$("#who").height(), triggerHook: 0.30 })
+new ScrollMagic.Scene({ triggerElement: "#who",  duration:$("#who").height(), triggerHook: 0.31 })
   .setClassToggle("#second", "hide") // add class toggle
  // .addIndicators() // add indicators (requires plugin)
   .addTo(controller);

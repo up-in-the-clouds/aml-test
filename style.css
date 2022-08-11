@@ -156,6 +156,8 @@ img {
 .menu_container {
   padding: 36px 36px 54px 36px;
   grid-area: footer;
+  background: #cfe6cf;
+  z-index: 10;
 }
 .l_column {
   width: 20%;
@@ -165,20 +167,21 @@ img {
   height: 100vh;
   position: fixed;
   grid-area: sidebar;
-  display: inline-grid;
+  /* display: inline-grid; */
   grid-template-rows: 30vh auto;
   grid-template-columns: 100%;
   grid-template-areas:
     "header"
     "footer";
   align-items: start;
-  z-index: 10;
+  /* z-index: 10; */
 }
 .email {
-  bottom: 54px;
-  /* position: fixed; */
   margin-left: 36px;
-  /*margin-bottom: 54px; */
+  margin-bottom: 0;
+  position: fixed;
+  bottom: 54px;
+  z-index: -2;
 }
 
 .logo {
@@ -196,6 +199,7 @@ img#logo_img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
+  margin: auto;
 }
 
 .mobile_header {
@@ -510,7 +514,7 @@ section#contact {
 }
 
 /* desktop */
-@media only screen and (min-width: 1391px) {
+@media only screen and (min-width: 1500px) {
   .grid_parent {
     grid-template-columns: 20% auto;
   }
