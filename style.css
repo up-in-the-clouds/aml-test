@@ -290,9 +290,7 @@ section#contact {
   margin-right: 36px;
   margin-bottom: 0;
 }
-#margin_left {
-  margin-left: 0;
-}
+
 .r_line_home {
   border-bottom: 1px solid #000;
   /* position: absolute; */
@@ -331,6 +329,12 @@ section#contact {
 }
 .margin_bottom {
   margin-bottom: 0;
+}
+.margin_left {
+  margin-left: 0;
+}
+.margin_right {
+  margin-right: 0 !important;
 }
 .anchor_height {
   display: block;
@@ -375,11 +379,12 @@ section#contact {
       "sidebar"
       "main"; */
     display: inline-block;
+    width: 100%;
   }
 
   .l_column,
   .r_column {
-    width: auto;
+    width: 100%;
   }
   .l_column {
     position: sticky;
@@ -459,6 +464,8 @@ section#contact {
     margin-top: 6.5px;
   }
   .text_box {
+    min-width: auto;
+    max-width: 100%;
     padding-top: 36px;
     padding-bottom: 72px;
     padding-left: 0;
@@ -473,6 +480,10 @@ section#contact {
   }
   .vertical_img.eng {
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 18px;
+    width: 100%;
+    height: auto;
   }
 
   .columns {

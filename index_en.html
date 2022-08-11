@@ -5,6 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astala Lehtola Mantila Oy - English</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/A-L-M_logo_no-text_mobile.svg"
+    />
+    <meta property="’og:title’" content="Astala Lehtola Mantila Oy - English" />
+    <meta
+      property="’og:image’"
+      content="assets/img/preview.jpg"
+      alt="AML logo"
+    />
+    <meta
+      property="’og:description’"
+      content="Film and TV Series Content Development Service"
+    />
+    <meta property="’og:url’" content="astala-lehtola-mantila.fi/index_en" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="navbar.css" />
     <link
@@ -18,7 +38,10 @@
       <div class="l_column" id="menu_block">
         <div class="logo">
           <a href="index.html#home_anchor"
-            ><img id="logo_img" src="assets/img/A-L-M_logo_large-padding.svg"
+            ><img
+              id="logo_img"
+              src="assets/img/A-L-M_logo_large-padding.svg"
+              alt="AML logo"
           /></a>
           <div id="l_line"></div>
         </div>
@@ -77,6 +100,7 @@
             <img
               id="logo_img_mob"
               src="assets/img/A-L-M_logo_no-text_mobile.svg"
+              alt="AML logo"
             />
             <h3 style="display: inline-flex">Astala Lehtola Mantila</h3>
           </div>
@@ -98,7 +122,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="logo">
             <a href="index.html#home_anchor"
-              ><img id="logo_img" src="assets/img/A-L-M_logo_large-padding.svg"
+              ><img
+                id="logo_img"
+                src="assets/img/A-L-M_logo_large-padding.svg"
+                alt="AML logo"
             /></a>
             <div id="l_line"></div>
           </div>
@@ -165,7 +192,10 @@
                 Film and TV Series Content Development Service
               </h2>
               <div class="full_img">
-                <img src="assets/img/all.jpg" />
+                <img
+                  src="assets/img/all.jpg"
+                  alt="Auli Mantila, Juha Lehtola and Erkki Astala"
+                />
               </div>
               <p class="paragraph margin-top">
                 We believe in what is most valuable, inspiring and unique to the
@@ -256,14 +286,14 @@
               </div>
               <span class="space_2"></span>
               <div class="columns eng_img">
-                <div class="vertical_img eng" id="margin_left">
-                  <img src="assets/img/erkki.jpg" />
+                <div class="vertical_img eng margin_left">
+                  <img src="assets/img/erkki.jpg" alt="Erkki Astala portrait" />
                 </div>
                 <div class="vertical_img eng">
-                  <img src="assets/img/juha.jpg" />
+                  <img src="assets/img/juha.jpg" alt="Juha Lehtola portrait" />
                 </div>
-                <div class="vertical_img eng">
-                  <img src="assets/img/auli.jpg" />
+                <div class="vertical_img eng margin_right">
+                  <img src="assets/img/auli.jpg" alt="Auli Mantila portrait" />
                 </div>
               </div>
             </div>
@@ -292,22 +322,5 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="scroll.js"></script>
     <script src="script.js"></script>
-    <script>
-      //active element menu
-      // Get the container element
-      var btnContainer = document.getElementById("menu_list");
-
-      // Get all buttons with class="btn" inside the container
-      var btns = btnContainer.getElementsByClassName("navigation");
-
-      // Loop through the buttons and add the active class to the current/clicked button
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-    </script>
   </body>
 </html>

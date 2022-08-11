@@ -33,77 +33,22 @@ $(document).on('click','.navbar-collapse.collapse',function(e) {
 });
 
 
+    //active element menu
+      // Get the container element
+      var btnContainer = document.getElementById("menu_list");
+
+      // Get all buttons with class="btn" inside the container
+      var btns = btnContainer.getElementsByClassName("navigation");
+
+      // Loop through the buttons and add the active class to the current/clicked button
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
 
 //Hamburguer Menu: CodePen/ Hamburger menu - Bootstrap 4 by Andjela 
 //https://codepen.io/AndjelaP/pen/rNxBbzR
-
-   //scrollspy
-//       $('body').scrollspy({ target: '#navbar-example' })
-//       $('[data-spy="scroll"]').each(function () {
-//   var $spy = $(this).scrollspy('refresh')
-// })
-      //scroll active
-  
-// function myFunction() {
-//   window.scrollBy(100, 100);
-//   alert("pageXOffset: " + window.pageXOffset + ", pageYOffset: " + window.pageYOffset);
-// }
-
-
-//       const sections = document.querySelectorAll("section");
-//       const navLi = document.querySelectorAll("nav .menu_container ul li");
-//       window.addEventListener("scroll", () => {
-//         let current = "";
-//         sections.forEach((section) => {
-//           const sectionTop = section.offsetTop;
-//           const sectionHeight = section.scrollHeight;
-//           if (pageYOffset >= sectionTop - sectionHeight / 5) {
-//             current = section.getAttribute("id");
-//           }
-//         });
-
-//         navLi.forEach((li) => {
-//           li.classList.remove("active");
-//           if (li.classList.contains(current)) {
-//             li.classList.add("active");
-//           }
-//         });
-//       });
-
-      //mobile
-      // function myFunction(x) {
-      //   if (x.matches) { // If media query matches
-      // //header display mobile
-      // var menuContainer = document.getElementById("menu_block");
-      // var mobileHeader = document.getElementById("myDiv");
-      // const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-      // const menuHeight = document.documentElement.scrollHeight - menuContainer.innerHeight;
-      // window.addEventListener('scroll', ()=>{
-      //  if(scrollable > 1550){
-      //    console.log("HI")
-      //   // mobileHeader.style.display=flex
-
-      //   menuHeight.onclick = console.log(menuHeight);
-      //   mobileHeader.style.visibility = "visible";
-      //  }
-      // })
-      //   }
-      //   // else {
-      //   //   document.body.style.backgroundColor = "pink";
-      //   // }
-      // }
-
-      // var x = window.matchMedia("(max-width: 800px)");
-      // myFunction(x); // Call listener function at run time
-      // x.addListener(myFunction); // Attach listener function on state changes
-
-      //hide element
-      // let textB = btnContainer.getElementsByClassName("text_box");
-      // const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-      // window.addEventListener('scroll', ()=>{
-      //  if(scrollable > 550){
-      //   document.getElementById("first").style.color="#cfe6cf"
-      //  }
-      // })
-
-      //mobile menu collapse
