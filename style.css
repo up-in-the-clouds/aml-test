@@ -334,9 +334,11 @@ section#contact {
 }
 .anchor_height {
   display: block;
-  height: 30vh;
+  /* height: 30vh;
   min-height: 200px;
-  max-height: 350px;
+  max-height: 350px; */
+  padding-top: 30vh;
+  margin-top: -30vh;
 }
 /* mobile */
 @media only screen and (max-width: 800px) {
@@ -489,6 +491,10 @@ section#contact {
 
   section#contact {
     min-height: 72px;
+  }
+  .anchor_height {
+    padding-top: 72px;
+    margin-top: -72px;
   }
 }
 
