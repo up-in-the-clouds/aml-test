@@ -190,6 +190,8 @@ img {
   height: 30vh;
   min-height: 200px;
   max-height: 350px;
+  background-color: #cfe6cf;
+  z-index: 10;
 }
 img#logo_img {
   height: 30vh;
