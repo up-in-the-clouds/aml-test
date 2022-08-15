@@ -34,6 +34,7 @@ $(document).on('click','.navbar-collapse.collapse',function(e) {
 
 
     //active element menu
+    // W3Schools : https://www.w3schools.com/howto/howto_js_active_element.asp
       // Get the container element
       var btnContainer = document.getElementById("menu_list");
 
@@ -48,6 +49,7 @@ $(document).on('click','.navbar-collapse.collapse',function(e) {
           this.className += " active";
         });
       }
+      
 
 
 //Hamburguer Menu: CodePen/ Hamburger menu - Bootstrap 4 by Andjela 

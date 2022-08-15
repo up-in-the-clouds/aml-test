@@ -128,8 +128,10 @@ a.anchor_point:active,
   color: #000;
 }
 
-a.anchor_point:visited {
+a.anchor_point:visited,
+li.navigation:visited {
   color: #000;
+  font-family: "Reforma 1918 blanca";
 }
 
 li {
@@ -349,6 +351,11 @@ section#contact {
   padding-top: 30vh;
   margin-top: -30vh;
 }
+p.paragraph.manual {
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+}
 /* mobile */
 @media only screen and (max-width: 800px) {
   .desktop {
@@ -383,7 +390,7 @@ section#contact {
     grid-template-areas:
       "sidebar"
       "main"; */
-    display: inline-block;
+    display: block;
     width: 100%;
   }
 
@@ -392,11 +399,13 @@ section#contact {
     width: 100%;
   }
   .l_column {
-    position: sticky;
+    position: unset;
     border-right: none;
     height: 100%;
     min-width: 100%;
+    max-width: 100%;
     display: block;
+    grid-template-rows: 100%;
   }
   /* .logo {
     padding-top: 36px;
@@ -415,8 +424,9 @@ section#contact {
     padding-bottom: 27px;
   }
   .email {
-    position: inherit;
-    padding-top: 27px;
+    padding-bottom: 12px;
+    position: unset;
+    padding-top: 12px;
     margin-left: 0;
   }
   .height_A {
@@ -490,6 +500,9 @@ section#contact {
     width: 100%;
     height: auto;
   }
+  .float_left {
+    float: left;
+  }
 
   .columns {
     display: block;
@@ -514,6 +527,26 @@ section#contact {
   }
 }
 
+/* XXS mobile */
+@media only screen and (max-width: 384.9px) {
+  .vertical_img {
+    height: auto;
+    width: 165px;
+  }
+}
+/* XXS mobile */
+@media only screen and (max-width: 325.9px) {
+  .vertical_img {
+    width: 150px;
+    margin-left: 9px;
+  }
+}
+/* XXS mobile */
+@media only screen and (max-width: 299.9px) {
+  .vertical_img {
+    width: 130px;
+  }
+}
 /* desktop */
 @media only screen and (min-width: 1500px) {
   .grid_parent {

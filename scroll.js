@@ -18,7 +18,7 @@ const homeHeight = $("#home").height()-20
 const whoHeight = $("#who").height()-20
 
 // build scenes
-var scene = new ScrollMagic.Scene({ triggerElement: "#home", duration: homeHeight, triggerHook:0.25 })
+var scene = new ScrollMagic.Scene({ triggerElement: "#home", duration: homeHeight, triggerHook:0.28 })
   .setClassToggle("#menu_1", "active") // add class toggle
   //.addIndicators() // add indicators (requires plugin)
   .addTo(controller);
